@@ -1,0 +1,133 @@
+*{
+	padding:0px;
+}
+
+body{
+	background-color:#bdd7cd;
+}
+
+.modal{
+	margin:0 auto;
+	margin-top:5%;
+		padding:0px;
+	display:flex;
+	flex-direction:column;
+	 width: 658px;
+     height: 401px;
+  background-color: #ffffff;
+}
+
+.modal::after{
+     top: -518px;
+    z-index: -1;
+    left: -73px;
+    width: 800px;
+    display: grid;
+    content: "";
+    height: 874px;
+    object-fit: contain;
+    mix-blend-mode: overlay;
+    background: transparent url(./images/shadow.png) no-repeat;
+    position: relative;
+}
+
+.modal-body form{
+	padding-left:40px;
+	padding-right:40px;
+	display:flex;
+flex-direction:column;
+}
+
+.modal-header{
+	 width: 658px;
+  height: 81px;
+  background-color: #05595a;
+  margin-bottom:21px;
+
+  
+}
+
+.modal-header h2{
+	  font-family: 'Helvetica';
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  
+}
+
+input[type=text] {
+	padding-left:22px;
+	
+	 height: 61px;
+	 border: solid 1px #e1e1e1;
+  background-color: #ffffff;
+  margin-bottom:19px;
+   margin-top:19px;
+    font-family: 'Helvetica';
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #a7a7a7;
+}
+
+
+input[type=submit]{
+	margin-top:21px;
+	 font-family: 'Helvetica';
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+   background-color: #0aa699;
+   border:0px;
+   margin-bottom:40px;
+}
+
+input[name=email]{
+	background: transparent url(./images/user.png) no-repeat;
+	background-position: 535px 50%; 
+	padding-right:21px;
+}
+
+input[name=pass]{
+	background: transparent url(./images/lock.png) no-repeat;
+	background-position: right; 
+	background-position: 535px 50%; 
+}
+
+.close {
+	height: 2px;
+    padding-bottom: 24px;
+    background: #fff;
+    color: #055a5b;
+    float: right;
+    line-height: 24px;
+    font-family: 'Helvetica';
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -70px;
+    width: 21px;
+    margin-right: 19px;
+    padding-left: 7px;
+    border-radius: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
